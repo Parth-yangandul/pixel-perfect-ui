@@ -172,11 +172,11 @@ export default function Screen2() {
       {/* Live breadth verdict */}
       <section className="rounded-lg border border-[#e5e7eb] bg-white p-6">
         <h2 className="text-[16px] font-bold text-[#111827] mb-3">Live breadth verdict</h2>
-        <div className="rounded-md border border-[#fcd34d] bg-[#fef3c7] px-4 py-3">
-          <div className="text-[14px] font-bold text-[#92400e] mb-1">
+        <div className="rounded-md border-l-4 border-[#1d4a8c] bg-[#f3f4f6] px-4 py-3">
+          <div className="text-[14px] font-bold text-[#111827] mb-1">
             Test position allowed — powerful BPNYA thrust overrides negative NASI
           </div>
-          <p className="text-[13px] text-[#78350f]">
+          <p className="text-[13px] text-[#4b5563]">
             NASI is negative (macro backdrop unfavorable) but BPNYA has surged powerfully
             from red to green. Small test position permitted. Do not add until NASI confirms.
           </p>
