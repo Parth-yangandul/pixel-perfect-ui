@@ -26,8 +26,8 @@ function Segmented<T extends string>({
 }) {
   const active =
     activeStyle === "green"
-      ? "bg-[#ecfdf5] border-[#bbf7d0] text-[#15803d]"
-      : "bg-[#dbeafe] border-[#bfdbfe] text-[#1d4a8c]";
+      ? "bg-[#e0f0f8] border-[#bfdbfe] text-[#1d4a8c]"
+      : "bg-[#e0f0f8] border-[#bfdbfe] text-[#1d4a8c]";
   return (
     <div className="grid gap-2" style={{ gridTemplateColumns: `repeat(${options.length}, minmax(0,1fr))` }}>
       {options.map((o) => (
