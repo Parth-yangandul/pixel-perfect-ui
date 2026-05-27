@@ -152,11 +152,11 @@ export default function Screen2() {
         <h2 className="text-[16px] font-bold text-[#111827] mb-4">Permission tiers</h2>
         <ul className="space-y-3">
           {[
-            { color: "#15803d", title: "Full size — NASI positive + rising, BPNYA green", body: "Strongest backdrop. Full intended position size permitted." },
-            { color: "#15803d", title: "Full size — NASI positive (any direction), BPNYA green", body: "Normal market conditions. Full position size allowed." },
-            { color: "#b45309", title: "Half size — NASI negative, BPNYA moderate thrust", body: "Reduced position to probe the move. No pyramiding until NASI confirms." },
-            { color: "#b45309", title: "Test size — NASI negative, BPNYA powerful thrust override", body: "Small test position only. Sized to risk very little. Same stop rules apply." },
-            { color: "#b91c1c", title: "No trade — NASI negative, BPNYA red or weak thrust", body: "Both unfavorable or flip unconvincing. System rejects the trade." },
+            { color: "#1d4a8c", title: "Full size — NASI positive + rising, BPNYA green", body: "Strongest backdrop. Full intended position size permitted." },
+            { color: "#1d4a8c", title: "Full size — NASI positive (any direction), BPNYA green", body: "Normal market conditions. Full position size allowed." },
+            { color: "#6b7280", title: "Half size — NASI negative, BPNYA moderate thrust", body: "Reduced position to probe the move. No pyramiding until NASI confirms." },
+            { color: "#6b7280", title: "Test size — NASI negative, BPNYA powerful thrust override", body: "Small test position only. Sized to risk very little. Same stop rules apply." },
+            { color: "#111827", title: "No trade — NASI negative, BPNYA red or weak thrust", body: "Both unfavorable or flip unconvincing. System rejects the trade." },
           ].map((t) => (
             <li key={t.title} className="flex gap-3 items-start rounded-md border border-[#e5e7eb] px-4 py-3">
               <div className="mt-1.5 w-2.5 h-2.5 rounded-full shrink-0" style={{ backgroundColor: t.color }} />
