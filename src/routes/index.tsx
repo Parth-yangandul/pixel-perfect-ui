@@ -11,7 +11,7 @@ function Index() {
   const [page, setPage] = useState<1 | 2>(1);
 
   return (
-    <div className="min-h-screen bg-[#fafafa] text-[#111827]" style={{ fontFamily: 'Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif' }}>
+    <div className="min-h-screen bg-[#f0f0f0] text-[#111827]" style={{ fontFamily: 'Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif' }}>
       <div className="mx-auto max-w-[960px] px-8 py-10">
         {/* Header */}
         <header className="flex items-center justify-between pb-3 border-b border-[#e5e7eb]">

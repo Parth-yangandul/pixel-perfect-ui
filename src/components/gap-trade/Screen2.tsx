@@ -26,8 +26,8 @@ function Segmented<T extends string>({
 }) {
   const active =
     activeStyle === "green"
-      ? "bg-[#ecfdf5] border-[#bbf7d0] text-[#15803d]"
-      : "bg-[#dbeafe] border-[#bfdbfe] text-[#1d4a8c]";
+      ? "bg-[#e0f0f8] border-[#bfdbfe] text-[#1d4a8c]"
+      : "bg-[#e0f0f8] border-[#bfdbfe] text-[#1d4a8c]";
   return (
     <div className="grid gap-2" style={{ gridTemplateColumns: `repeat(${options.length}, minmax(0,1fr))` }}>
       {options.map((o) => (
@@ -152,11 +152,11 @@ export default function Screen2() {
         <h2 className="text-[16px] font-bold text-[#111827] mb-4">Permission tiers</h2>
         <ul className="space-y-3">
           {[
-            { color: "#15803d", title: "Full size — NASI positive + rising, BPNYA green", body: "Strongest backdrop. Full intended position size permitted." },
-            { color: "#15803d", title: "Full size — NASI positive (any direction), BPNYA green", body: "Normal market conditions. Full position size allowed." },
-            { color: "#b45309", title: "Half size — NASI negative, BPNYA moderate thrust", body: "Reduced position to probe the move. No pyramiding until NASI confirms." },
-            { color: "#b45309", title: "Test size — NASI negative, BPNYA powerful thrust override", body: "Small test position only. Sized to risk very little. Same stop rules apply." },
-            { color: "#b91c1c", title: "No trade — NASI negative, BPNYA red or weak thrust", body: "Both unfavorable or flip unconvincing. System rejects the trade." },
+            { color: "#1d4a8c", title: "Full size — NASI positive + rising, BPNYA green", body: "Strongest backdrop. Full intended position size permitted." },
+            { color: "#1d4a8c", title: "Full size — NASI positive (any direction), BPNYA green", body: "Normal market conditions. Full position size allowed." },
+            { color: "#6b7280", title: "Half size — NASI negative, BPNYA moderate thrust", body: "Reduced position to probe the move. No pyramiding until NASI confirms." },
+            { color: "#6b7280", title: "Test size — NASI negative, BPNYA powerful thrust override", body: "Small test position only. Sized to risk very little. Same stop rules apply." },
+            { color: "#111827", title: "No trade — NASI negative, BPNYA red or weak thrust", body: "Both unfavorable or flip unconvincing. System rejects the trade." },
           ].map((t) => (
             <li key={t.title} className="flex gap-3 items-start rounded-md border border-[#e5e7eb] px-4 py-3">
               <div className="mt-1.5 w-2.5 h-2.5 rounded-full shrink-0" style={{ backgroundColor: t.color }} />
@@ -172,11 +172,11 @@ export default function Screen2() {
       {/* Live breadth verdict */}
       <section className="rounded-lg border border-[#e5e7eb] bg-white p-6">
         <h2 className="text-[16px] font-bold text-[#111827] mb-3">Live breadth verdict</h2>
-        <div className="rounded-md border border-[#fcd34d] bg-[#fef3c7] px-4 py-3">
-          <div className="text-[14px] font-bold text-[#92400e] mb-1">
+        <div className="rounded-md border-l-4 border-[#1d4a8c] bg-[#f3f4f6] px-4 py-3">
+          <div className="text-[14px] font-bold text-[#111827] mb-1">
             Test position allowed — powerful BPNYA thrust overrides negative NASI
           </div>
-          <p className="text-[13px] text-[#78350f]">
+          <p className="text-[13px] text-[#4b5563]">
             NASI is negative (macro backdrop unfavorable) but BPNYA has surged powerfully
             from red to green. Small test position permitted. Do not add until NASI confirms.
           </p>
