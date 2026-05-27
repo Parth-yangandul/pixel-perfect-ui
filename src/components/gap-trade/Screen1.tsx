@@ -189,7 +189,7 @@ export default function Screen1() {
           ].map((c) => (
             <div key={c.label} className="rounded-md bg-[#f3f4f6] px-4 py-3 text-center">
               <div className="text-[12px] text-[#6b7280] mb-1">{c.label}</div>
-              <div className="text-[15px] font-semibold text-[#dc2626]">{c.value}</div>
+              <div className="text-[15px] font-semibold text-[#1e4880]">{c.value}</div>
             </div>
           ))}
         </div>
